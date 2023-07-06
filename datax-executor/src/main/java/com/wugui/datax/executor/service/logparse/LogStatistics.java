@@ -80,19 +80,19 @@ public class LogStatistics implements Serializable {
         this.taskRecordWritingSpeed = taskRecordWritingSpeed;
     }
 
-    public int getTaskRecordReaderNum() {
+    public Long getTaskRecordReaderNum() {
         return taskRecordReaderNum;
     }
 
-    public void setTaskRecordReaderNum(int taskRecordReaderNum) {
+    public void setTaskRecordReaderNum(Long taskRecordReaderNum) {
         this.taskRecordReaderNum = taskRecordReaderNum;
     }
 
-    public int getTaskRecordWriteFailNum() {
+    public Long getTaskRecordWriteFailNum() {
         return taskRecordWriteFailNum;
     }
 
-    public void setTaskRecordWriteFailNum(int taskRecordWriteFailNum) {
+    public void setTaskRecordWriteFailNum(Long taskRecordWriteFailNum) {
         this.taskRecordWriteFailNum = taskRecordWriteFailNum;
     }
 

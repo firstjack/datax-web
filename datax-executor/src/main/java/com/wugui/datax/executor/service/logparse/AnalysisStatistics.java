@@ -46,9 +46,9 @@ public class AnalysisStatistics {
                 } else if (line.contains(TASK_RECORD_WRITING_SPEED_SUFFIX)) {
                     logStatistics.setTaskRecordWritingSpeed(subResult(line));
                 } else if (line.contains(TASK_RECORD_READER_NUM_SUFFIX)) {
-                    logStatistics.setTaskRecordReaderNum(Integer.parseInt(subResult(line)));
+                    logStatistics.setTaskRecordReaderNum(Long.parseLong(subResult(line)));
                 } else if (line.contains(TASK_RECORD_WRITING_NUM_SUFFIX)) {
-                    logStatistics.setTaskRecordWriteFailNum(Integer.parseInt(subResult(line)));
+                    logStatistics.setTaskRecordWriteFailNum(Long.parseLong(subResult(line)));
                 }
                 JobLogger.log(line);
             }
